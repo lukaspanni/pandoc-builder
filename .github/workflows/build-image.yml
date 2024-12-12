@@ -1,12 +1,11 @@
-name: Build and publish  docker image
+name: Build and publish docker image
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 0'
-
+    - cron: '0 0 1 * *'
 jobs:
   build:
     permissions: write-all
